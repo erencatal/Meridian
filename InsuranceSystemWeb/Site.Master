@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="InsuranceSystemWeb.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Meridian Insurance | Instant Coverage &amp; Policy Portal</title>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <div><strong>Meridian Insurance</strong> | Instant Coverage &amp; Policy Portal</div>
+            <div>
+                <a href="Default.aspx">Customer Portal</a>
+                <a href="Advisor.aspx">Advisor Dashboard</a>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
