@@ -78,6 +78,15 @@ body {
     font-weight: 600;
 }
 
+/* Checkbox and radio labels stay next to their box */
+.form-row input[type="checkbox"] + label,
+.form-row input[type="radio"] + label {
+    display: inline;
+    margin: 0 14px 0 4px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
 .input-control {
     width: 100%;
     max-width: 380px;
